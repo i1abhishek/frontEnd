@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+.navbar{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+header {
+   background-color: #2b3660;
+   padding-top: 15px;
+   padding-bottom: 5px;
+   width: 100%;
+   margin-bottom: 10px;
+ }
+
+header:hover {
+        padding-top: 30px;
+    }
+
+
+.nav-item{
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+  font-size: large;
+  margin-top: 0px;
+ }
+
+.nav-item:hover {
+      color: #FFD700;
+      border-bottom: solid #FFD700 3px;
+  }
+
+ .login {
+   font-family: 'Open Sans', sans-serif;
+   text-decoration:none;
+   float: right;
+   margin-right: 25px;
+   color: white;
+   display: inline-block;
+   font-size: large;
+   margin-top: 0px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 20px;
+    }
+
+.login:hover {
+      color: #FFD700;
+      border-bottom: solid #FFD700 3px;
+  }
+
+.leftbar {
+        margin-top: 60px;
+        padding: 16px;
+        float: left;
+        background-color:#2b3660;
+        height:100%;
+        overflow:auto;
+        width: 16%;
+        
+        font-family: 'Open Sans', sans-serif;
+   }
+
+    .lbar {
+        display: block;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: large;
+       
+        width: 90%;
+        margin: 4px;
+     
+        padding: 8px;
+       
+ }
+
+    .user {
+        text-decoration:none;
+        display: inline-block;
+        padding: 8px;
+        width: 95%;
+         }
+
+.user:hover{
+   color: #FFD700;
+      border-bottom: solid #FFD700 3px;
+}
+
+    .username{
+      text-decoration:none;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: larger;
+        color: white;
+
+    }
+
+.lbar:hover{
+  color: #FFD700;
+      border-bottom: solid #FFD700 3px;
+}
+
+.rightbar {
+       text-decoration:none;
+        float: right;
+        border: 2px solid white;
+        margin-right: 8px;
+        margin-top: 75px;
+        padding: 16px;
+        width: 18%;
+        color: white;
+        background-color: #2b3660;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+
+
+
+
+.post-body {
+        border-top-left-radius: 50px;
+        width: 50%;
+        background-color: #2b3660;
+        display: block;
+        text-align: left;
+        font-size: larger;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        padding: 2px;
+        margin-top:15px;
+        margin-bottom: 16px;
+       border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    }
+
+    #postedby {
+        border-radius: 50%;
+        border: solid 1.5px white;
+        float: left;
+        clear: right;
+        height: 60px;
+        width: 60px;
+        margin: 12px;
+    }
+
+    #postby {
+        font-size: larger;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    #date {
+        font-size: medium;
+        margin: 0px;
+    }
+
+    #time {
+        font-size: medium;
+        margin: 0px;
+    }
+
+    .post-data {
+        width: 96.35%;
+        background-color: white;
+       border-top-left-radius: 25px ;
+        
+        margin-top: 5px;
+        color: #2b3660;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: medium;
+        text-decoration: none;
+
+
+    }
+
+    #post-image {
+        width: 100%;
+        max-height: 1000px;
+    }
+
+    .post-footer {
+       width: 100%;
+        display: inline-block;
+
+    }
+
+    .footicons {
+        width: 50px;
+        height: 50px;
+        margin: 4px;
+    }
+    .footicons:hover {
+       padding: 3px;
+
+    }
+    #comment {
+    background-color: white;
+    border: 1px solid #2b3660;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    }
+
+    button {
+        height: 45px;
+        font-size: medium;
+        padding: 5px;
+    }
+
+.cbutton{
+  -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    background-color: #2CBBBB;
+    border: 1px solid #27A0A0;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+   font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+</style>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Student Portal- Feed Template</title>
+</head>
+<body>
+  <header>
+    <center>
+  <ul class="navbar">
+    <a href="#" class="nav-item"><li>Home</li></a>
+    <a href="#" class="nav-item"><li>About</li></a>
+    <a href="#" class="nav-item"><li>Experiences</li></a>
+    <a href="#" class="nav-item"><li>Club</li></a>
+    <a href="#" class="nav-item"><li>Contribute</li></a>
+    <a href="#" class="login"><li>Login</li></a>
+    </ul>
+    </center>
+  </header>
+  <br>
+  
+<center> <br><br> <img class="img-responsive margin-top" height="100px" width="100px" style="margin: 0 auto;" alt="VNIT LOGO" src="http://studentportal.vnit.ac.in/static/IMAGES/VNIT-Nagpur-Logo.jpg">
+  </center>
+  <h2 id="name" style="margin-top:4%; font-size: 20px;" align="center">VISVESVARAYA NATIONAL INSTITUTE OF TECHNOLOGY, NAGPUR</h2>
+
+   
+   <p class="container sp" style="font-size: 40px; text-align: center; color: black; background-color: white; width:100%; font-family: 'Source Sans Pro', sans-serif!important; border-bottom:5px solid #dad3d36e;">Student Portal</p>
+  
+  <ul class="leftbar">
+    <div class = "user">
+        <img src="https://image.ibb.co/cthNde/user.png" alt="userpic" id="userimage">
+        <h3 class="username">Username</h3>
+    </div>
+    <hr>
+
+        <a ><li class="lbar">Upcoming Events</li></a>
+    <hr>
+        <a ><li class="lbar">Notices</li></a>
+    <hr>
+        <a ><li class="lbar">T&P posts</li></a>
+    <hr>
+
+</ul>
+  
+  <div class="rightbar">
+    
+    <h2 class="lbar">Contact Us</h2>
+    <hr>
+     <p><h4>VNIT Student Portal Team</h4><br>
+      E-mail: studentportal@students.vnit.ac.in<br></p>
+  </div>
+  
+
+ <div class="timeline">
+
+
+   <center>
+
+   <div class = "post-body">
+       <img src="data:image/png;base64,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" alt="clublogo" id="postedby" alt="clublogo" align="left">
+       <br<u><p id="postby">E-Cell, VNIT</p></u>
+       <p id="date">1st October, 2018</p>
+       <p id="time">12:30pm</p>
+
+
+    <div class="post-data">
+
+       <p>
+          Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations.
+       </p>
+        
+        <img src="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/02/23/104300870-steve_jobs.1910x1000.jpg" id="post-image">
+
+    </div>
+
+     <div class="post-footer">
+           <a href="#"> <img src="https://melbournechapter.net/images/clapping-hands-clipart-5.png" class="footicons"></a>
+           
+           <br>
+           <input type="text" placeholder="Comment Plz!... :)" id="comment">
+           <input type="button" value="Comment" class="cbutton"> 
+     
+  </div>
+
+   </div>
+
+    
+     <div class="post-footer">
+           <br>
+          
+           
+
+
+      </div>
+
+   </div>
+
+       <br><br><br><br><br><br> <br><br><br><br><br><br>
+
+
+</center>
+</div>
+
+
+
+   
+  
+
+
+
+</body>
+</html>
